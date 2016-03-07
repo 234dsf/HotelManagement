@@ -20,7 +20,7 @@
 </head>
 <body>
 	
-	<%@include file="info/admininfo.jsp" %>
+	<%@include file="/info/admininfo.jsp" %>
 	
 	<h1><font color="red"><center>房间列表</center></font></h1>
 
