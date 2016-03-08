@@ -10,5 +10,16 @@
 			<result name="addSuc" type="redirect">orderService</result>
 			<result name="addFail" type="dispatcher">/info/result.jsp</result>
 		</action>
+		
+		<action name="orderService" class="orderServiceAction">
+			<result name="success" type="dispatcher">/info/orderinfo.jsp</result>
+			<result name="delSuc" type="dispatcher">/info/result.jsp</result>
+		</action>
+		
+		<action name="listOrder" class="listOrderAction">
+			<result name="success" type="dispatcher">/order/list.jsp</result>
+		</action>
+		
+		
 	</package>
 </struts>
