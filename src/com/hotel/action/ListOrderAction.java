@@ -6,6 +6,8 @@ import java.util.Map;
 
 import com.hotel.bean.Order;
 import com.hotel.bean.Room;
+import com.hotel.service.OrderService;
+import com.hotel.service.RoomService;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -14,6 +16,23 @@ import com.opensymphony.xwork2.ActionSupport;
  *
  */
 public class ListOrderAction extends ActionSupport {
+
+	private RoomService roomService;
+	
+	private OrderService orderService;
+	/**
+	 * @param orderService the orderService to set
+	 */
+	public void setOrderService(OrderService orderService) {
+		this.orderService = orderService;
+	}
+	
+	/**
+	 * @param roomService the roomService to set
+	 */
+	public void setRoomService(RoomService roomService) {
+		this.roomService = roomService;
+	}
 	
 	/* (non-Javadoc)
 	 * @see com.opensymphony.xwork2.ActionSupport#execute()
