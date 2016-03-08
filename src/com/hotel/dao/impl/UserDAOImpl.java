@@ -30,7 +30,7 @@ public class UserDAOImpl extends HibernateDaoSupport implements UserDAO {
 	 */
 	@Override
 	public List<User> findAllUers() {
-		String sql = "form User";
+		String sql = "from User";
 		List<User> list = (List<User>)this.getHibernateTemplate().find(sql);
 		return list;
 	}
