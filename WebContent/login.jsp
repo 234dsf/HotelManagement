@@ -11,13 +11,14 @@
 <body>
 	
 	<h1><font color="blue">用户登录</font></h1>
-	<s:form action="" method="post">
+	<s:form action="login" method="post">
 		<s:a href="adminlogin.jsp">管理员登录</s:a>&nbsp;&nbsp;&nbsp;
 		<s:a href="register.jsp">用户注册</s:a>
 		
 		<s:textfield name="username" label="用户名"></s:textfield>
 		<s:password name="password" label="密码"></s:password>
-	
+		<s:submit value="登录"></s:submit>
+		<s:set/>
 	</s:form>
 
 
