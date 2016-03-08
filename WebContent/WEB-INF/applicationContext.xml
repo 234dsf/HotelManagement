@@ -76,7 +76,9 @@
 		<property name="orderService" ref="orderService"></property>
 	</bean>
 	
-	
+	<bean id="loginAction" class="com.hotel.action.LoginAction">
+		<property name="userService" ref="userService"></property>
+	</bean>
 	
 	
 </beans>
