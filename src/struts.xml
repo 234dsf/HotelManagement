@@ -5,6 +5,13 @@
 
 <struts>
 	<package name="default" extends="struts-default">
+	
+		<action name="login" class="loginAction">
+			<result name="success">/admin/home.jsp</result>
+			<result name="failer">login.jsp</result>
+		</action>
+	
+	
 		<action name="saveOrder" class="saveOrderAction">
 			<result name="success" type="dispatcher">/order/add.jsp</result>
 			<result name="addSuc" type="redirect">orderService</result>
@@ -19,6 +26,7 @@
 		<action name="listOrder" class="listOrderAction">
 			<result name="success" type="dispatcher">/order/list.jsp</result>
 		</action>
+		
 		
 		
 	</package>
